@@ -1,0 +1,8 @@
+body { 
+    display: grid;
+    place-content: center;
+}
+svg {
+    height: 96vh;
+    width: 40vw;
+}
