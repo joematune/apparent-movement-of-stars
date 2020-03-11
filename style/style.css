@@ -1,8 +1,33 @@
 body { 
+    margin: 0;
     display: grid;
-    place-content: center;
+    place-items: center;
+    background-color: rgb(255, 255, 232);
 }
 svg {
-    height: 96vh;
-    width: 40vw;
+    margin-top: 5vh;
+    height: 50vh;
+}
+div.footnote {
+    margin: 20px 0;
+    width: 270px;
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    body {
+        grid-template: 98vh / 1fr 1fr;
+    }
+    svg {
+        height: 98vh;
+        grid-column: 2 / 3;
+    }
+    em.footnote {
+        line-height: 2rem;
+    }
+    div.footnote {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 40vw;
+        justify-self: end;
+    }
 }
